@@ -1,0 +1,5 @@
+future==0.18.2
+iso8601==1.1.0
+PyYAML==6.0
+RPi.GPIO==0.7.1
+serial==0.0.97
