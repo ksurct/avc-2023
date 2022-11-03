@@ -1,11 +1,11 @@
 #ifndef __SENSORS_HPP__
 #define __SENSORS_HPP__
 #include <ArduinoJson.h>
-#include <Adafruit_FXAS21002C.h>
-#include <Adafruit_FXOS8700.h>
-#include <Adafruit_Sensor.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
+//#include <Adafruit_FXAS21002C.h>
+//#include <Adafruit_FXOS8700.h>
+//#include <Adafruit_Sensor.h>
+//#include <avr/io.h>
+//#include <avr/interrupt.h>
 #include "Json.hpp"
 
 using namespace json;
