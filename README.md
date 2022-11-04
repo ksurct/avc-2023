@@ -6,10 +6,9 @@
 
 #### Robot Dir:
 - has files for running the robot and calculating algorithms
-- e 
 
 #### teeny Dir:
-code for the micro controller and sensors
+- code for the micro controller and sensors
 
 #### Solidworks Dir:
 - TODO
