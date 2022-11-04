@@ -11,8 +11,8 @@ https://www.thenrc.org/uploads/7/1/5/1/71512601/nrccontestrules2023.pdf (pages 1
 `python3 run.py # in the root of the repository while in virtual environment`
 </br>
 
-## To Use the Virtual Environment
-- Windows:  `python -m venv venv`
+## To Use the Virtual Environment DOESNT WORK IN WONDOWS AT THE MOMENT
+- Windows (WIP):`python -m venv venv`
             `venv\Scripts\activate`
             `pip install -r requirements.txt`
 
