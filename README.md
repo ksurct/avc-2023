@@ -4,6 +4,11 @@
 ## PDF page for the Competition
 https://www.thenrc.org/uploads/7/1/5/1/71512601/nrccontestrules2023.pdf (pages 14-18)
 </br>
+<br></br>
+
+
+
+
 
 ## TO RUN THE ROBOT FROM THE PI
 `python3 run.py # in the root of the repository`
