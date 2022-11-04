@@ -1,8 +1,8 @@
 # 2023 KSURCT AVT
 
 ### TO RUN THE ROBOT:
-    windows - python run.py in the root of the repository
-    linux - python3 run.py in the root of the repository
+    windows:    python run.py # in the root of the repository
+    linux:      python3 run.py # in the root of the repository
 
 #### Robot Dir:
 - has files for running the robot and calculating algorithms
