@@ -1,5 +1,8 @@
 # 2023 KSURCT AVT
 
+## PDF page for the Competition
+https://www.thenrc.org/uploads/7/1/5/1/71512601/nrccontestrules2023.pdf (pages 14-18)
+
 ### TO RUN THE ROBOT:
     windows:    python run.py # in the root of the repository
     linux:      python3 run.py # in the root of the repository
