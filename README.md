@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 2023 KSURCT Autonomous Vehicle Team
 </br>
 
