@@ -31,5 +31,9 @@ https://www.thenrc.org/uploads/7/1/5/1/71512601/nrccontestrules2023.pdf (pages 1
 #### Test Dir:
 - For testing
 
-#### OpenCV
+#### OpenCV:
 - if we decide to use camera this will hold all of the files for image processing
+
+### Development
+Push all changes to develop branch
+Main branch holds stable and tested code
