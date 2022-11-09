@@ -9,6 +9,7 @@ class Robot():
     def run(self):
         while(True):
             self.tick()
+
     
     def __tick(self):
         pass
