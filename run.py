@@ -1,7 +1,7 @@
-from .robot import robot
+from .robot import robot as r
 
 if __name__ == "__main__":
-    robot = Robot()
+    robot = r.Robot()
     robot.run()
     pass
     ## START THE ROBOT

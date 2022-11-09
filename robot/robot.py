@@ -1,3 +1,6 @@
+import motor
+import config
+
 class Robot():
     
     # Two public functions  
