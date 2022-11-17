@@ -1,17 +1,28 @@
-import motor
-import config
-from serialTeensyToPi import SerialInput as SensorData
+from time import time
 
+import robot.motor
+from robot.config import Config
+#from robot.serialTeensyToPi import SerialInput as SensorData
+
+conf = Config(None, 1, False, True, 10)
 class Robot():
     
-    # Two public functions  
+    # PUBLIC FUNCTIONS  
     def __init__(self):
         pass
-        self.sensordata = SensorData()
+#        self.sensordata = SensorData()
     def run(self):
-        while(True):
+        # setup the timeLimit for shutting down the robot after some time
+        startTime = int(time())
+        runningTime = int(time())
+        
+        # main running loop
+        while(runningTime - startTime <= conf.timeLimit):
             self.tick()
+            runningTime = int(time())
 
-    
-    def __tick(self):
-        self.sensordata.receiveData()
+    # PRIVATE FUNCTIONS
+    # this function is called continuously while the robot is running 
+    def tick(self):
+#        self.sensordata.receiveData()
+        print("hello")

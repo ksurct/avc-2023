@@ -1,4 +1,4 @@
-import serial as s
+import serial as s 
 import json
 from time import sleep
 
