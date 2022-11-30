@@ -17,43 +17,6 @@ float normZ;
 //Adafruit_FXAS21002C gyroscope = Adafruit_FXAS21002C(0x0021002C); 
 Adafruit_FXOS8700 accelmag = Adafruit_FXOS8700(0x8700A, 0x8700B);
 
-/*
-class magnet
-{
-  float x_hard = -33.77;
-  float y_hard = -99;
-  float z_hard = -197.1;
-  float soft[3][3] = {
-      {1.095, -0.017, 0.003},
-      {0.016, 1.013, 0.061},
-      {0.000, 0.062, 0.903}};
-
-  /*
-    magnet(){
-      x_hard = -8.07;
-      y_hard = -26.33;
-      z_hard = -67.37;
-      soft = {
-        { 0.984, -0.3, 0.012 },
-        { -0.032, 1.014, 0.045 },
-        { 0.013, 0.042, 1.01 }
-      };
-    }
-    
-public:
-  void calc(float x, float y, float z, float &xout, float &yout, float &zout)
-  {
-    float xtemp = x - x_hard;
-    float ytemp = y - y_hard;
-    float ztemp = z - z_hard;
-
-    xout = soft[0][0] * xtemp + soft[0][1] * ytemp + soft[0][2] * ztemp;
-    yout = soft[1][0] * xtemp + soft[1][1] * ytemp + soft[1][2] * ztemp;
-    zout = soft[2][0] * xtemp + soft[2][1] * ytemp + soft[2][2] * ztemp;
-  }
-};
-*/
-
 struct calibration
 {
   float magx = -12.85;
@@ -78,15 +41,22 @@ struct euler{
 
 // magnet tune;
 
+/*
+trigPinF1:    Front Right
+trigPinF2:    Right
+trigPinF3:    Left
+trigPinF4:    Front Left
+trigPinF5:    Front
+*/
 void sensorsInit(Data *dataReference)
 {
-  pinMode(trigPinF1, OUTPUT);
+  pinMode(trigPinF1, OUTPUT); 
   pinMode(trigPinF2, OUTPUT);
   pinMode(trigPinF3, OUTPUT);
   pinMode(trigPinF4, OUTPUT);
   pinMode(trigPinF5, OUTPUT);
   timer.begin(sensorTrigger, 150000);
-  attachInterrupt(echoPinF1, frReceived, CHANGE);
+  attachInterrupt(echoPinF1, frReceived, CHANGE); 
   attachInterrupt(echoPinF2, rReceived, CHANGE);
   attachInterrupt(echoPinF3, lReceived, CHANGE);
   attachInterrupt(echoPinF4, flReceived, CHANGE);
