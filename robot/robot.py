@@ -4,6 +4,7 @@ import robot.motor
 from robot.config import Config
 #from robot.serialTeensyToPi import SerialInput as SensorData
 
+#       ALGO, SPEED, CAMERA, TESTING, TIME LIMIT 
 conf = Config(None, 1, False, True, 10)
 class Robot():
     def __init__(self):
