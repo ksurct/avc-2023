@@ -1,12 +1,15 @@
 class Algorithm(object):
-    def __init__(self):
-        self.turnAngle
-        self.speed
-        self.section = 0
+    def __init__():
+        pass
 
-    def run(self):
-        match self.section:
-            case 0:
-                pass
-            case 1:
-                
+    def turnLeft():
+        #do stuff here
+
+    def turnRight():
+        #do stuff here
+
+    def goStraight():
+        #do stuff here
+
+
+    
