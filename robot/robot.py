@@ -9,7 +9,7 @@ conf = Config(None, 1, False, True, 10)
 class Robot():
     def __init__(self):
         pass
-#        self.sensordata = SensorData()
+#        self.sensorData = SensorData()
     def run(self):
         # setup the timeLimit for shutting down the robot after some time
         startTime = int(time())
@@ -20,7 +20,15 @@ class Robot():
             self.tick()
             runningTime = int(time())
 
+    def arcTurn(self, angle):
+        pass
+    
+    def moveStraight(self):
+        pass
+
     # this function is called continuously while the robot is running 
     def tick(self):
-#        self.sensordata.receiveData()
+        # Run These twice a secondish
+        #self.sensorData.receiveData()
+        #self.sensorData.receiveCamData()
         print("hello")

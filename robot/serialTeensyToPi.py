@@ -36,6 +36,9 @@ class SerialInput(object):
         self.magZ = line['magX']
         self.magY = line['magY']
         self.magZ = line['magZ']
+
+    def recieveCamData(self):
+        pass
         
     def pingTeensy(self):
         self.serial.write(b'r')
