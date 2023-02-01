@@ -19,11 +19,12 @@ class SerialInput(object):
         self.magX = 0.0
         self.magY = 0.0
         self.magZ = 0.0
+        self.cam_data = None
 
     def receiveData(self):
         self.pingTeensy()
         line = json.loads(self.ser.readline().decode('utf-8').rstrip())
-        # print(line)
+        # print(line) ## DEBUGGING
         self.fr_data = line['fr_data']
         self.fl_data = line['fl_data']
         self.f_data = line['f_data']
@@ -38,7 +39,7 @@ class SerialInput(object):
         self.magZ = line['magZ']
 
     def recieveCamData(self):
-        pass
+        pass ## put camera data/picture into self.cam_data
         
     def pingTeensy(self):
         self.serial.write(b'r')
